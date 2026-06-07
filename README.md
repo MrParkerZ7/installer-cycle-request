@@ -119,6 +119,15 @@ with the installers + portable archives above.
 **Contents: read & write** on this repo — so its workflow can publish here (a repo's
 `GITHUB_TOKEN` is scoped to its own repo only).
 
-## License
+## Legal & Security
 
-MIT — see [`LICENSE`](LICENSE). Same license as the source project.
+cycle-request is **MIT-licensed** — see [`LICENSE`](LICENSE) (same license as the source
+project). Full legal + policy documents live in the source repo:
+
+- [LICENSE](https://github.com/MrParkerZ7/project-cycle-request/blob/main/LICENSE) — MIT
+- [Third-party licenses & attributions](https://github.com/MrParkerZ7/project-cycle-request/blob/main/THIRD-PARTY-LICENSES.md) — bundled dependencies
+- [Security policy](https://github.com/MrParkerZ7/project-cycle-request/blob/main/SECURITY.md) — how to report a vulnerability
+- [EULA](https://github.com/MrParkerZ7/project-cycle-request/blob/main/EULA.md) · [Disclaimer & acceptable use](https://github.com/MrParkerZ7/project-cycle-request/blob/main/DISCLAIMER.md)
+
+> Installers are currently **unsigned** — Windows SmartScreen / macOS Gatekeeper may
+> warn on first launch; allow it through to proceed.
