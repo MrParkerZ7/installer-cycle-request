@@ -22,6 +22,24 @@ service, no lock-in. Share a collection by committing it.
 It speaks **Postman's file format natively** (`.postman_collection.json`), so you can
 open existing Postman collections directly and hand them back unchanged.
 
+## Screenshots
+
+**Request editor** — build a request with methods, bodies, headers, auth, variables, pre/test scripts, and per-request docs. Collections and folders live in the left tree.
+
+![Request editor](screenshots/request-editor.png)
+
+**Automate (collection runner)** — run a whole collection, watch per-request results and `pm.test` assertions, with saved run configs and persisted history.
+
+![Automate collection runner](screenshots/automate-runner.png)
+
+**Export-to-PDF report** — a polished run report: pass rate, latency percentiles, status-code & method distribution, and the slowest requests.
+
+![Exported PDF report](screenshots/pdf-report.png)
+
+**Build a reusable run** — pick requests across the collection and save the configuration to re-run any time.
+
+![Build a run](screenshots/build-a-run.png)
+
 ## Key features
 
 - **Collections, folders & requests** — the familiar Postman hierarchy, stored as
