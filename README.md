@@ -40,9 +40,9 @@ open existing Postman collections directly and hand them back unchanged.
 
 ![Build a run](screenshots/build-a-run.png)
 
-**Load testing** — drive a k6-style concurrent load test from your existing collection: name the run, set concurrency / duration / ramp-up (or a scheduled team-sync start), pick the target requests, and review live metrics + saved run history.
+**Load testing** — drive a k6-style concurrent load test from your existing collection, then review a full results dashboard for every run: requests, error rate, throughput, latency percentiles (p50–p99), concurrency, wall-clock, and status-code distribution — saved to history and exportable to PDF.
 
-![Load testing](screenshots/load-test.png)
+![Load testing results](screenshots/load-test.png)
 
 ## Key features
 
