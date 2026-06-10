@@ -62,6 +62,11 @@ open existing Postman collections directly and hand them back unchanged.
 - **Automate (collection runner)** — saved run configs, persisted run history, a live
   progress view, and an **Export-to-PDF** report (KPI grid + analytics tables +
   per-request detail).
+- **Load testing** — k6-style concurrent load tests driven from your existing
+  collections: set concurrency / duration or iterations / ramp-up (or a scheduled
+  team-sync start), then review a full **results dashboard** — requests, error rate,
+  throughput, latency percentiles (p50–p99), and status-code distribution — saved to
+  history and exportable to PDF.
 - **Import & export** — import from **Postman v2.1 · Insomnia v4 · HAR · cURL**;
   export back to Postman v2.1 or copy any request as a cURL one-liner.
 - **Recent folders** — an IDE-style "Open Recent" list on the welcome screen
@@ -71,6 +76,13 @@ open existing Postman collections directly and hand them back unchanged.
 - **17 themes + adjustable density** — dark and light themes (Tokyo Night, Dracula,
   Cyberpunk, Synthwave, Rosé Pine, Everforest, …) and Standard / Compact /
   Ultra-compact spacing; both persist across restarts.
+- **Built-in update check** — the title bar shows the running version, and on launch
+  the app checks this repo for a newer release (no GitHub account or token needed),
+  surfacing an **↑ update** badge plus a **Settings → Update** panel (current / latest
+  / status · Check now · View releases) when one is available. *(new in v0.0.11)*
+- **Activity & error log** — a unified console + on-disk log (errors, warnings,
+  crashes with full stack detail) with level / retention / open-folder controls under
+  **Settings → Logs**.
 
 A fuller capability breakdown — on-disk format, variable precedence, the scripting
 API surface, data locations, and the platform matrix — lives in **[SPEC.md](SPEC.md)**.
@@ -110,7 +122,10 @@ app is from an unidentified developer:
   `xattr -dr com.apple.quarantine /Applications/cycle-request.app`
 - **Windows** — SmartScreen may show a blue prompt → **More info → Run anyway**.
 
-Signing + notarization + an in-app auto-updater are on the roadmap.
+The app **does** check this repo on launch and tells you when a newer release is
+available (the **↑ update** badge / **Settings → Update**), so you won't miss one —
+but it doesn't yet download or install updates for you. Signing + notarization +
+auto-download/install are on the roadmap.
 
 ### Platform notes
 

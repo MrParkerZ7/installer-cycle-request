@@ -120,6 +120,20 @@ Scripts compose across levels: **collection → folder(s) → request** for pre-
 - **PDF report** — export a run as a paginated PDF with a KPI grid, analytics tables
   (by status / method / slowest-5 / failure breakdown), and a per-request detail list.
 
+### Load testing (k6-style)
+
+Beyond functional runs, the **Load** board drives concurrent load tests from the same
+collections:
+
+- **Run profile** — concurrency (1–N virtual users), a **Duration** or **Iterations**
+  stop mode, linear ramp-up, and an optional **scheduled start** so a distributed team
+  can arm one shared config and fire together.
+- **Cross-collection target** — select requests across collections; each runs against
+  its own environment.
+- **Results dashboard** — KPIs (requests · error rate · throughput · p95 latency ·
+  concurrency · wall-clock), latency percentiles (p50–p99), and a status-code
+  distribution; every run is saved to a per-collection history and exportable to PDF.
+
 ## 10. Import & export
 
 | Direction | Formats |
@@ -180,8 +194,10 @@ Settings such as the **Recent folders** list, active theme, and density are stor
 - **Code signing / notarization** — builds are currently unsigned; expect an
   "unidentified developer" prompt (see the README for the per-OS bypass). Signing is
   planned.
-- **Auto-update** — `latest*.yml` metadata is published, but the in-app updater isn't
-  wired yet; update by downloading a newer release.
+- **Auto-update** — the app **checks this repo on launch and notifies you** when a
+  newer release is available (title-bar **↑ update** badge + **Settings → Update**);
+  automatic **download/install** isn't wired yet, so grab the newer release manually.
+  `latest*.yml` metadata is published for a future updater.
 - **macOS Intel** and additional Linux packaging (`.deb` / `.rpm`) are not built yet.
 - **Client certificates (mTLS)** are deferred; HTTP(S) proxy support is available.
 
