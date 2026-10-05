@@ -9,6 +9,18 @@ from the source repo when a version tag is pushed.
 
 > ⬇️ **[Download the latest release →](../../releases/latest)**
 
+**Latest release: [v0.0.13](../../releases/tag/v0.0.13)** — 2026-10-05 ·
+[changelog](https://github.com/MrParkerZ7/project-cycle-request/blob/main/CHANGELOG.md)
+
+| Platform | Installer | Portable |
+|----------|-----------|----------|
+| **Windows** (x64) | [cycle-request.Setup.0.0.13.exe](https://github.com/MrParkerZ7/installer-cycle-request/releases/download/v0.0.13/cycle-request.Setup.0.0.13.exe) | [cycle-request-0.0.13-win.zip](https://github.com/MrParkerZ7/installer-cycle-request/releases/download/v0.0.13/cycle-request-0.0.13-win.zip) |
+| **macOS** (Apple Silicon) | [cycle-request-0.0.13-arm64.dmg](https://github.com/MrParkerZ7/installer-cycle-request/releases/download/v0.0.13/cycle-request-0.0.13-arm64.dmg) | [cycle-request-0.0.13-arm64-mac.zip](https://github.com/MrParkerZ7/installer-cycle-request/releases/download/v0.0.13/cycle-request-0.0.13-arm64-mac.zip) |
+| **Linux** (x64) | [cycle-request-0.0.13.AppImage](https://github.com/MrParkerZ7/installer-cycle-request/releases/download/v0.0.13/cycle-request-0.0.13.AppImage) | — (not in this release) |
+
+Licenses of the bundled components: [THIRD-PARTY-NOTICES.txt](https://github.com/MrParkerZ7/installer-cycle-request/releases/download/v0.0.13/THIRD-PARTY-NOTICES.txt)
+(also inside every package, under `resources/legal/`).
+
 ---
 
 ## What is cycle-request?
@@ -100,8 +112,8 @@ Each release ships an **installer** and a **portable** build per platform:
 | **macOS** (Apple Silicon / arm64) | `cycle-request-<version>-arm64.dmg` | `cycle-request-<version>-arm64-mac.zip` |
 | **Linux** (x64) | `cycle-request-<version>.AppImage` | `desktop-electron-<version>.zip` |
 
-Plus `latest*.yml` files — auto-update metadata for a future updater; not needed for
-manual installs.
+Each release also carries `THIRD-PARTY-NOTICES.txt` — the license and notice texts of
+the components bundled in the app.
 
 ### Per-platform steps
 
